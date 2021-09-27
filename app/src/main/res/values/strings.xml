@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JCJZ</string>
+    <string name="start_desc">【账本功能，应有尽有】 100种场景账本，满足你不同时期的需要： - 家庭账本：生活必备，分类齐全，还可以一家人一起记 - 旅游账本：多人记账、旅游预算、旅行清单…满足你天南地北的旅行需求 - 宝贝账本：相册记录宝贝精彩每一刻，家人共享宝贝成长点滴 - 记加班账本：记加班、记请假，到手工资不会错 - 生意账本：记录你的财富积累之路，共享账本给收银员，支持权限管理 - 收钱账本：老板经营店铺必备，收款后自动记账，清晰记录所有收款</string>
+    <string name="start_text">让我陪你记录生活的点点滴滴吧！</string>
+    <string name="gril">炫酷女孩</string>
+    <string name="boy">追风男孩</string>
+</resources>

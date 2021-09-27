@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/removebgprevieswwbackground_img"
+    tools:context=".CarActivity">
+    <View
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"/>
+    <ImageView
+        android:id="@+id/iv_cars_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/locomotivemodelbackgroundframe_box"
+        app:layout_constraintTop_toBottomOf="@id/iv_navigation"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_cars"
+        app:layout_constraintStart_toStartOf="@id/gl_center_cars"
+        app:layout_constraintEnd_toEndOf="@id/gl_center_cars"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cars"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_select_car"
+        app:layout_constraintStart_toStartOf="@id/iv_cars_bg"
+        app:layout_constraintEnd_toEndOf="@id/iv_cars_bg"
+        app:layout_constraintTop_toTopOf="@id/iv_cars_bg"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_car_cars"/>
+    <ImageView
+        android:id="@+id/iv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="11dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_man"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:text="炫酷女孩"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_sex" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/data_crad"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_card"
+        app:layout_constraintStart_toStartOf="@id/tv_sex"
+        app:layout_constraintTop_toBottomOf="@id/tv_sex" />
+
+    <View
+        android:id="@+id/exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_navigation"
+        app:layout_constraintEnd_toEndOf="@id/gl_end_exit"
+        app:layout_constraintStart_toStartOf="@id/gl_start_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/btn_ok_font"
+        app:layout_constraintBottom_toBottomOf="@id/gl_center_enter"
+        app:layout_constraintEnd_toEndOf="@id/gl_center_car"
+        app:layout_constraintStart_toStartOf="@id/gl_center_car"
+        app:layout_constraintTop_toTopOf="@id/gl_center_enter" />
+
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/top_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_start_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:elevation="1dp"
+        android:src="@drawable/man_character_img"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_person"
+        app:layout_constraintEnd_toEndOf="@id/gl_center_car"
+        app:layout_constraintStart_toStartOf="@id/gl_center_car"
+        app:layout_constraintTop_toTopOf="@id/gl_top_person" />
+    <View
+        android:id="@+id/enter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl_start_navigation"
+        app:layout_constraintStart_toStartOf="@id/gl_start_enter"
+        app:layout_constraintTop_toTopOf="@id/gl_top_enter" />
+    <ImageView
+        android:id="@+id/prompt_enter"
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        android:src="@drawable/bootprompt_1"
+        app:layout_constraintStart_toStartOf="@id/gl_center_car"
+        app:layout_constraintBottom_toTopOf="@id/ok"
+        android:layout_marginBottom="6dp"/>
+    <ImageView
+        android:id="@+id/prompt_cars"
+        android:layout_width="85dp"
+        android:layout_height="58dp"
+        android:src="@drawable/bootprompt_2"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintEnd_toStartOf="@id/rv_cars"
+        app:layout_constraintTop_toTopOf="@id/rv_cars"/>
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/big_no1_img"
+        app:layout_constraintBottom_toBottomOf="@id/gl_bottom_car"
+        app:layout_constraintEnd_toEndOf="@id/gl_center_car"
+        app:layout_constraintStart_toStartOf="@id/gl_center_car"
+        app:layout_constraintTop_toBottomOf="@id/iv_sex" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_center_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.912"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_car_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.782" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.867"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.672" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.177" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.556" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.744" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_center_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.515" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bottom_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_center_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.808"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
