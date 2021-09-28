@@ -35,6 +35,8 @@ android {
 dependencies {
     implementation 'com.github.xuexiangjys:XUI:1.1.8'
     implementation 'com.github.xuexiangjys.XUtil:xutil-core:2.0.0'
+    implementation 'com.github.xuexiangjys.XOrmlite:xormlite-runtime:1.0.2'
+    annotationProcessor 'com.github.xuexiangjys.XOrmlite:xormlite-compiler:1.0.2'
 
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'

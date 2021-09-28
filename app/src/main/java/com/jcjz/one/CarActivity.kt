@@ -5,6 +5,7 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.jcjz.one.adapter.CarsAdapter
+import com.jcjz.one.common.CommonUtils
 import com.xuexiang.xutil.common.ClickUtils
 import com.xuexiang.xutil.data.SPUtils
 import kotlinx.android.synthetic.main.activity_car.*

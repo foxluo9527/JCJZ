@@ -3,13 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/bg_bill_tab_year.xml" value="0.17203947368421052" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/bg_set_birth.xml" value="0.17203947368421052" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/bg_set_input.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/bg_set_tab.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/bg_start_card.xml" value="0.27239583333333334" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/ic_back_d.xml" value="0.16775244299674266" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/ic_resource_switch.xml" value="0.17203947368421052" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/ic_set_d.xml" value="0.16775244299674266" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_car.xml" value="0.13205479452054794" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_sex.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/drawable/selector_color_set_tab.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_bill.xml" value="0.136" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_car.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_log.xml" value="0.16" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_set.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_sex.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/activity_splash.xml" value="0.1618421052631579" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/item_bill.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/JCJZ/app/src/main/res/layout/item_select_car.xml" value="0.1" />
       </map>
     </option>

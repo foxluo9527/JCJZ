@@ -1,7 +1,9 @@
 package com.jcjz.one
 
 import android.content.Intent
+import android.view.KeyEvent
 import com.bumptech.glide.Glide
+import com.jcjz.one.common.CommonUtils
 import com.xuexiang.xutil.common.ClickUtils
 import com.xuexiang.xutil.common.StringUtils
 import com.xuexiang.xutil.data.SPUtils
@@ -26,18 +28,32 @@ class SexActivity : BaseActivity() {
             Glide.with(this)
                 .load(R.drawable.man_character_img)
                 .into(iv_person)
-        }else{
+        } else {
             tv_sex.text = getString(R.string.gril)
             Glide.with(this)
                 .load(R.drawable.women_character_img)
                 .into(iv_person)
         }
+        iv_setting.setOnClickListener {
+            startActivity(Intent(this,SetActivity::class.java))
+        }
+    }
+
+    /**
+     * 菜单、返回键响应
+     */
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            ClickUtils.exitBy2Click()
+        }
+        return true
     }
 
     override fun onResume() {
         super.onResume()
         initData()
     }
+
     override fun initFullScreen(): Boolean {
         return true
     }

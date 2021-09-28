@@ -1,4 +1,6 @@
-package com.jcjz.one;
+package com.jcjz.one.common;
+
+import com.jcjz.one.R;
 
 import java.util.ArrayList;
 

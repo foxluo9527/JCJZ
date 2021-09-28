@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme"
+    tools:context=".SetActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="97dp"
+        android:layout_height="match_parent"
+        android:background="#160F4F"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#E9922F"
+            android:gravity="center"
+            android:text="返回上一页"
+            android:textColor="@color/white" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_mine"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/bg_set_tab"
+            android:checked="true"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textAlignment="gravity"
+            android:textColor="@drawable/selector_color_set_tab" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_about"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bg_set_tab"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textAlignment="gravity"
+            android:textColor="@drawable/selector_color_set_tab" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/top_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_start_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.556" />
+
+    <View
+        android:id="@+id/exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_navigation"
+        app:layout_constraintEnd_toEndOf="@id/gl_end_exit"
+        app:layout_constraintStart_toStartOf="@id/gl_start_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.744" />
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:background="@drawable/bg_set_tab"
+        android:checked="true"
+        android:gravity="center"
+        android:paddingStart="11dp"
+        android:text="设置中心"
+        android:textColor="#00FBFF"
+        app:layout_constraintBottom_toBottomOf="@id/iv_navigation"
+        app:layout_constraintStart_toEndOf="@+id/ll_tab"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fl_mine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="18dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="21dp"
+        app:cardBackgroundColor="#191251"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_tab"
+        app:layout_constraintTop_toBottomOf="@id/iv_navigation">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="昵称"
+                    android:textColor="#01E2FD" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/bg_set_input"
+                    android:hint="请设置您的专属昵称"
+                    android:paddingHorizontal="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#C2C2C2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="机车年龄"
+                    android:textColor="#01E2FD" />
+
+                <EditText
+                    android:id="@+id/et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/bg_set_input"
+                    android:hint="如0.5年"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="#C2C2C2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="生日日期"
+                    android:textColor="#01E2FD" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/bg_set_birth"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingHorizontal="5dp"
+                    android:singleLine="true"
+                    android:textColorHint="#C2C2C2"
+                    android:hint="点击设置日期"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_sure"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="13dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/btn_sure" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fl_about"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginVertical="18dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="21dp"
+        app:cardBackgroundColor="#191251"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ll_tab"
+        app:layout_constraintTop_toBottomOf="@id/iv_navigation">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginVertical="10dp"
+                    android:src="@mipmap/ic_launcher_round"/>
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/app_name"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

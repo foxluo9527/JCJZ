@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.jcjz.one.CommonUtils;
+import com.jcjz.one.common.CommonUtils;
 import com.jcjz.one.R;
 
 public class CarsAdapter extends RecyclerView.Adapter {
